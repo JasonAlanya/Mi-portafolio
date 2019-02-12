@@ -1,0 +1,42 @@
+body{
+    font-family: 'VT323', monospace;
+    margin: 0px
+}
+.header{
+    background-color: #022831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+figure{
+    margin: 0px 20px;
+}
+.menu{
+    height: inherit;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.header ol li{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.header a{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #62C6BD;
+}

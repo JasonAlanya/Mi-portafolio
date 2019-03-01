@@ -1,6 +1,7 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0px
+    margin: 0px;
+    background-color: #f1f3f4;
 }
 .header{
     background-color: #022831;
@@ -75,8 +76,6 @@ h2 {
 }
 .project{
     background-color: white;
-    border-bottom: 5px solid blue;
-    border-left: 5px solid blue;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -92,4 +91,42 @@ h2 {
 }
 .project-imageContainer{
     width: 500px;
+}
+.dlogros{
+    background-color: #f1f3f4;
+    padding: 20px;
+}
+.Diplomas{
+    display: flex;
+}
+.diplomascaracters{
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+}
+.diplomasdetails{
+    margin: 20px 40px;
+    background-color:white;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    text-align: center
+}
+.Diplomas figure{
+    width: 400px;
+    margin: 0px;
+}
+.Diplomas img{
+    width: inherit;
+    height: 250px;
+}
+.diplomascaracters a{
+    color: blue;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
 }

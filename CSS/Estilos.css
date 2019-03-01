@@ -130,3 +130,46 @@ h2 {
     border: 1px solid blue;
     border-radius: 5px;
 }
+.contact-section{
+    background-color: #056fff;
+    color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-email input{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 25px;
+    background-image: url('../Imagenes/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+.form-email button{
+    width: 100px;
+    background-color: transparent;
+    display: block;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0px 20px;
+}
+.social-link.twitter{
+    background-image: url('../Imagenes/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../Imagenes/facebook.svg');
+}
+.social-link.github{
+    background-image: url('../Imagenes/github.svg');
+}

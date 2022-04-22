@@ -1,19 +1,24 @@
 import React from 'react'
 import Particles from "react-tsparticles";
-import type { Engine } from "tsparticles-engine";
 import { loadTrianglesPreset } from "tsparticles-preset-triangles";
 
-export class ParticlesContainer extends React.PureComponent<IProps> {
+export class ParticlesContainer  extends React.PureComponent {
   // this customizes the component tsParticles installation
-  async customInit(engine: Engine): Promise<void> {
+
+  async customInit(Engine){
     // this adds the preset to tsParticles, you can safely use the
-    loadTrianglesPreset(engine);
+    loadTrianglesPreset(Engine);
   }
 
   render() {
+    
     const options = {
       preset: "triangles",
-      position: "relative !fixed"
+      particles: {
+        "number": {
+          "value":window.screen.width * window.screen.height/20000,
+          }
+        }
     };
 
     return <Particles options={options} init={this.customInit} />;

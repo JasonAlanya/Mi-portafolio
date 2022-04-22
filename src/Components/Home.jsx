@@ -1,5 +1,5 @@
 import React from 'react'
-import Portada from './Portada'
+import Portada from './Home/Portada'
 
 const Home = () => {
   return (

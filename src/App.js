@@ -1,12 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import Portada from "./Components/Portada"
+import './SASS/App.scss'
+import Aboutme from './Components/Aboutme';
+import Contact from './Components/Contact';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import Projects from './Components/Projects';
+import Skills from './Components/Skills';
+
 
 function App() {
   return (
     <div className="App">
-      <Portada/>
-      <div className='prueba'>Prueba</div>
+      <Header/>
+      <Home/>
+      <Aboutme/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </div>
   );
 }

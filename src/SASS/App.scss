@@ -1,7 +1,9 @@
-#Projects{
-    height: 100vh;
-    background-color:tomato;
-}
+@import "./Config/Variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Signika:wght@400;700&display=swap');
+
+@import "./Components/Title";
+@import "./Components/Header", "./Components/Home", "./Components/Aboutme", 
+        "./Components/Skills", "./Components/Projects";
 
 #Contact{
     height: 100vh;

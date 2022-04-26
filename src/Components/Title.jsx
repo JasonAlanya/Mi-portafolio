@@ -1,5 +1,4 @@
-import React from 'react'
-import "../SASS/Title.scss"
+import React from 'react';
 
 const Title = ({texto}) => {
   return (

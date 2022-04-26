@@ -1,7 +1,6 @@
 import React from 'react'
 import {ParticlesContainer} from './Triangle'
 import Typical from 'react-typical'
-import "../SASS/Home.scss"
 
 const Home = () => {
   return (

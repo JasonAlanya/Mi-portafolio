@@ -1,0 +1,149 @@
+#Projects {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  #Projects .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 1000px;
+  }
+  #Projects .timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 90%;
+    background: #4961DC;
+    top: 70px;
+  }
+  #Projects .timeline ul {
+    margin: 0;
+    padding: 0;
+  }
+  #Projects .timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+  #Projects .timeline ul li .content {
+    padding-bottom: 20px;
+  }
+  #Projects .timeline ul li .content h3 {
+    margin: 0;
+    padding: 0;
+    color: #4961DC;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+  }
+  #Projects .timeline ul li .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #303030;
+    font-weight: 400;
+    text-align: justify;
+  }
+  #Projects .timeline ul li .time {
+    width: 120px;
+    text-align: center;
+  }
+  #Projects .timeline ul li .time h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  #Projects .timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+  }
+  #Projects .timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #4961dc;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(73, 97, 220, 0.3);
+  }
+  #Projects .timeline ul li:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #4961dc;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(73, 97, 220, 0.3);
+  }
+  #Projects .timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+  }
+  #Projects .timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #4961dc;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(73, 97, 220, 0.3);
+  }
+  #Projects .timeline ul li:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #4961dc;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(73, 97, 220, 0.3);
+  }
+  @media (max-width: 100px) {
+    #Projects .timeline {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    #Projects h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+    #Projects .timeline {
+      width: 100%;
+      margin-top: 40px;
+      padding-bottom: 0;
+    }
+    #Projects .timeline::before {
+      left: 20px;
+      top: 40px;
+    }
+    #Projects .timeline ul li:nth-child(odd), #Projects .timeline ul li:nth-child(even) {
+      width: 100%;
+      text-align: left;
+      padding-left: 50px;
+      padding-bottom: 50px;
+    }
+    #Projects .timeline ul li:nth-child(odd) .time, #Projects .timeline ul li:nth-child(even) .time {
+      top: -25px;
+      left: 50px;
+      right: inherit;
+    }
+    #Projects .timeline ul li:nth-child(odd):before, #Projects .timeline ul li:nth-child(even):before {
+      top: -10px;
+      left: 16px;
+    }
+  }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Title from '../Title'
-import "../SASS/Aboutme.scss"
-import foto from '../Images/Foto.jpg'
+import foto from '../../Images/Foto.jpg'
 
 const Aboutme = () => {
   return (

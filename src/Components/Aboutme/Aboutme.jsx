@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from './Title'
+import Title from '../Title'
 import "../SASS/Aboutme.scss"
 import foto from '../Images/Foto.jpg'
 

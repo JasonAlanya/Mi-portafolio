@@ -1,6 +1,47 @@
-#Skills{
-    height: 100vh;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
+#Skills {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+#Skills .Skillcontainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0 0 0;
+  justify-content: center;
+  align-items: center;
+}
+#Skills .Skillcontainer .Skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+#Skills .Skillcontainer .Skill h2 {
+  position: absolute;
+  padding-bottom: 8rem;
+  font-family: "Montserrat", sans-serif;
+  color: #303030;
+  font-weight: 600;
+}
+#Skills .Skillcontainer .Skill img {
+  position: absolute;
+  width: 2.3em;
+}
+#Skills .Skillcontainer .Skill svg {
+  padding: 0 1rem;
+}
+#Skills .Skillcontainer .Skill svg circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 0.8em;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }

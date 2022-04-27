@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../Images/Logo.png'
+import logo from '../Images/Imagen1.png'
 
 const Header = () => {
 
@@ -9,7 +9,8 @@ const Header = () => {
     if(!menuOpen){
       e.target.classList.add('open');
       document.querySelector(".Sections").classList.add('visible');
-      document.querySelector("body").classList.add('scrollbar');
+      document.querySelector(".Header").classList.add('oscuro');
+      //document.querySelector("body").classList.add('scrollbar');
       menuOpen=true;
     }
     else{
@@ -21,8 +22,24 @@ const Header = () => {
     if(menuOpen){
       document.querySelector(".open").classList.remove('open');
       document.querySelector(".Sections").classList.remove('visible');
-      document.querySelector("body").classList.remove('scrollbar');
+      if(window.innerHeight*0.9>window.scrollY){
+        document.querySelector(".Header").classList.remove('oscuro');
+      }
+      //document.querySelector("body").classList.remove('scrollbar');
       menuOpen=false;
+    }
+  }
+
+  window.onscroll = ()=>{
+    let y = window.scrollY;
+    let x = window.innerHeight*0.9;
+    if(x<y){
+      console.log(1)
+      document.querySelector(".Header").classList.add('oscuro');
+    }
+    else{
+      console.log(2)
+      document.querySelector(".Header").classList.remove('oscuro');
     }
   }
 

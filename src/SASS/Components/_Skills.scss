@@ -3,45 +3,56 @@
   background-color: #fff;
   position: relative;
   z-index: 1;
-}
-#Skills .Skillcontainer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3rem 0 0 0;
-  justify-content: center;
-  align-items: center;
-}
-#Skills .Skillcontainer .Skill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-}
-#Skills .Skillcontainer .Skill h2 {
-  position: absolute;
-  padding-bottom: 8rem;
-  font-family: "Montserrat", sans-serif;
-  color: #303030;
-  font-weight: 600;
-}
-#Skills .Skillcontainer .Skill img {
-  position: absolute;
-  width: 2.3em;
-}
-#Skills .Skillcontainer .Skill svg {
-  padding: 0 1rem;
-}
-#Skills .Skillcontainer .Skill svg circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 0.8em;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  animation: anim 2s linear forwards;
-}
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 0;
+
+  .Skillcontainer{
+    width: 80%;
+    padding: 3vh 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .Skill{
+      width: 8rem;
+      margin: 4vh 1rem 0;
+      h2{
+        text-align: center;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        color: #303030;
+        font-weight: 800;
+        font-size: 1.2rem;
+      }
+      .progress_outer{
+        margin: auto;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background: $Dark;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                    -6px -6px 10px -1px rgba(255,255,255,0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //background: conic-gradient(#4070f4 50%,#fff 50%);
+
+        .progress_inner{
+          height: 4.5rem;
+          width: 4.5rem;
+          background: #ededf7;
+          border-radius: 50%;
+          box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0.5px 12px 10px -10px rgba(0,0,0,0.05);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img{
+            width: 60%;
+          }
+        }
+      }
+    }
   }
+
 }

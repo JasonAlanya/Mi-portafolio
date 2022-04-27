@@ -1,19 +1,25 @@
 import React from 'react'
 
-const Skill = () => {
+const Skill = ({title, color, percentege, imagen}) => {
+  let start=setInterval(actualiza,10);
+  let upto = 1;
+  function actualiza (){
+    let counts = upto++;
+    console.log(counts)
+    if(upto > percentege){
+      clearInterval(start);
+    }
+    document.getElementById(title).style.background = 'conic-gradient('+color+' '+counts+'%,#fff '+counts+'%)';
+  }
+
   return (
-    <div class="Skill">
-        <h2>HTML</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
-            <defs>
-                <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#4961DC"></stop>
-                    <stop offset="100%" stop-color="#6A98F0"></stop>
-                </linearGradient>
-            </defs>
-            <circle cx="50" cy="50" r="40" stroke-linecap="round"></circle>
-        </svg>
-        <img src="/static/media/Html5.0f75188d2d5318f95087.png" alt="html5"/>
+    <div className="Skill">
+      <h2>{title}</h2>
+      <div id={title} className='progress_outer'>
+        <div className='progress_inner'>
+          <img src={imagen} alt="" />
+        </div>
+      </div>
     </div>
   )
 }

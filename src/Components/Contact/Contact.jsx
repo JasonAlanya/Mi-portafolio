@@ -1,15 +1,25 @@
 import React from 'react'
+import Popup from './Popup'
 import logo from '../../Images/Imagen1.png'
 
 const Contact = () => {
+
+    const abrir = ()=>{
+      let overlay = document.getElementById('overlay');
+	    let popup = document.getElementById('popup');
+      overlay.classList.add('active');
+      popup.classList.add('active');
+    };
+
   return (
     <div id="Contact">
       <div className='Contact_container'>
         <div className='Contact_section'>
           <h1>Start a project</h1>
           <h2>Interested in working together? We should queue up a chat.</h2>
-          <a href="">Let's do it</a>
+          <a id='btn-abrir-popup' onClick={abrir}>Let's do it</a>
         </div>
+        <Popup/>
       </div>
       <div className='Footer'>
         <img src={logo} alt="" />
@@ -27,13 +37,13 @@ const Contact = () => {
               </path>
             </svg>
           </a>
-          <a target="__blank" aria-label="facebook" title="facebook" href="https://www.facebook.com/jason.alanya//">
+          <a target="__blank" aria-label="facebook" title="facebook" href="https://www.facebook.com/jason.alanya">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" className="svg-inline--fa fa-facebook fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
               </path>
             </svg>
           </a>
-          <a target="__blank" aria-label="linkedin" title="linkedin" href="www.linkedin.com/in/jason-alanya">
+          <a target="__blank" aria-label="linkedin" title="linkedin" href="https://www.linkedin.com/in/jason-alanya">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" className="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
               </path>

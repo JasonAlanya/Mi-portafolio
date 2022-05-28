@@ -85,7 +85,7 @@ const Projects = () => {
           </li>
           <li id='project6'>
             <div className='content'>
-              <h3>Development of an IoT system using ESP8266 for the detection of asthma triggering allergens in childrenas</h3>
+              <h3>Development of an IoT system using ESP8266 for the detection of asthma triggering allergens in childrens</h3>
               <p>The system presented in this article seeks to measure air quality both inside the home of children with asthma and when it goes out, to avoid concerns on the part of parents or guardians in charge and to alert them in case of inconvenience. any. The system is responsible for uploading the reading of each of the sensors to a database in the cloud so that they are later published in a PWA and comparison and/or monitoring of the data can be carried out.</p>
             </div>
             <div className='time'>

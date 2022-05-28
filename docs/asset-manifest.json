@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a74b94d.css",
-    "main.js": "/static/js/main.157868e2.js",
-    "static/js/787.92ece109.chunk.js": "/static/js/787.92ece109.chunk.js",
-    "static/media/Imagen1.png": "/static/media/Imagen1.d3a683961cd8fb228501.png",
+    "main.css": "/static/css/main.848b4511.css",
+    "main.js": "/static/js/main.67ce07cc.js",
+    "static/js/787.ae0d8d37.chunk.js": "/static/js/787.ae0d8d37.chunk.js",
     "static/media/autocad.png": "/static/media/autocad.686b4fd308376c49c384.png",
+    "static/media/CV.pdf": "/static/media/CV.1edf8b6f197f55bf683d.pdf",
     "static/media/cpp.png": "/static/media/cpp.d11ee33603febdb54cb2.png",
     "static/media/Sass.png": "/static/media/Sass.c9d3452b6112d7ec31d0.png",
     "static/media/solidworks.png": "/static/media/solidworks.032736a93d62e4106e3f.png",
@@ -18,12 +18,12 @@
     "static/media/Codesys.png": "/static/media/Codesys.ffd418a25abeaaf5f31c.png",
     "static/media/css3.png": "/static/media/css3.409b3a09bb70c51542f8.png",
     "index.html": "/index.html",
-    "main.1a74b94d.css.map": "/static/css/main.1a74b94d.css.map",
-    "main.157868e2.js.map": "/static/js/main.157868e2.js.map",
-    "787.92ece109.chunk.js.map": "/static/js/787.92ece109.chunk.js.map"
+    "main.848b4511.css.map": "/static/css/main.848b4511.css.map",
+    "main.67ce07cc.js.map": "/static/js/main.67ce07cc.js.map",
+    "787.ae0d8d37.chunk.js.map": "/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a74b94d.css",
-    "static/js/main.157868e2.js"
+    "static/css/main.848b4511.css",
+    "static/js/main.67ce07cc.js"
   ]
 }

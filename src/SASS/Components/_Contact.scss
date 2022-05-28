@@ -124,12 +124,21 @@
         @media (max-width: 767px){
             img{
                 width: 10%;
+                @media (max-height: 500px) {
+                    width: 40px;
+                }
+                @media (max-height: 350px) {
+                    display: none;
+                }
             }
             p{
                 width: 50%;
             }
             .home_social{
                 width: 70%;
+                @media (max-height: 500px) {
+                    width: 50%;
+                }
             }
         }
     }
@@ -192,6 +201,9 @@
 
     @media (max-width: 800px) {
         font-size: 1.2rem;
+        @media (max-height: 500px) {
+            margin-bottom: 0;
+        }
     }
         
 }
@@ -225,6 +237,9 @@
     h5{
         text-align: left;
         margin: 0 0 0.5rem;
+        @media (max-height: 500px) {
+            margin: 0;
+        }
     }
     .inputdetails{
         width: 100%;
@@ -238,6 +253,12 @@
             width: 100%;
             &:first-child{
                 margin: 0;
+            }
+            @media (max-height: 500px) {
+                width: 45%;
+                &:first-child{
+                    margin-right: 10%;
+                }
             }
         }
     }
@@ -254,13 +275,18 @@
     @media (max-width: 800px) {
         text-align: center;
         font-size: 1rem;
-        height: 2.2rem;
+        //height: 10vh;
     }
 }
 
 textarea{
     height: 7.5rem;
     padding: 2% 5%;
+
+    @media (max-height: 500px) {
+        height: 20vh;
+        margin-bottom: 0;
+    }
 }
 
 .popup form .btn-submit {
@@ -284,7 +310,7 @@ textarea{
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active {	transform: scale(1); opacity: 1; height: auto; @media (max-height: 400px) {overflow: auto; height:60vh;}}
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
 .popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }

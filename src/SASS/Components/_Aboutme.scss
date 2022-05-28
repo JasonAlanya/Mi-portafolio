@@ -14,6 +14,8 @@
             display: flex;
             align-items: center;
             justify-content:end;
+            opacity: 0;
+            transform: translateY(3rem);
 
             div{
                 width: 230px;
@@ -30,6 +32,8 @@
             }
         }
         p{
+            opacity: 0;
+            transform: translateY(3rem);
             width: 60%;
             padding: 15% 15% 15% 5%;
             font-size: 1.3rem;
@@ -100,4 +104,10 @@
             display: none;
         }
     }
+}
+
+#Aboutme .contenedor_aboutme .subir{
+    transform: translateY(-1rem);
+    transition: all 2s linear;
+    opacity: 1;
 }

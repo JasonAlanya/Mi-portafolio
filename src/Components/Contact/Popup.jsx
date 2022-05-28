@@ -10,6 +10,7 @@ const Popup = () => {
         e.preventDefault();
         overlay.classList.remove('active');
         popup.classList.remove('active');
+        document.getElementById('header').classList.remove('esconder');
     }
 
   return (
@@ -33,7 +34,7 @@ const Popup = () => {
                             <textarea name="text" id="" cols="30" rows="5"></textarea>
                         </div>
 					</div>
-					<input type="submit" className="btn-submit" value="Suscribirse" onClick={cerrar}/>
+					<input type="submit" className="btn-submit" value="Submit" onClick={cerrar}/>
 				</form>
 			</div>
 	</div>

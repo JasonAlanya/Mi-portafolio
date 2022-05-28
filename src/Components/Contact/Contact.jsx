@@ -9,6 +9,7 @@ const Contact = () => {
 	    let popup = document.getElementById('popup');
       overlay.classList.add('active');
       popup.classList.add('active');
+      document.getElementById('header').classList.add('esconder');
     };
 
   return (

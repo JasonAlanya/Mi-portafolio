@@ -34,17 +34,15 @@ const Header = () => {
     let y = window.scrollY;
     let x = window.innerHeight*0.9;
     if(x<y){
-      console.log(1)
       document.querySelector(".Header").classList.add('oscuro');
     }
     else{
-      console.log(2)
       document.querySelector(".Header").classList.remove('oscuro');
     }
   }
 
   return (
-    <nav className='Header'>
+    <nav id="header" className='Header'>
       <a className='Logo' href='#Home'><img src={logo} alt="" /></a>
       <div className='Btn_burger' onClick={menuBtn}></div>
       <ul className='Sections'>

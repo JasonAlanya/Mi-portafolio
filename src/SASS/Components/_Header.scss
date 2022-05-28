@@ -123,6 +123,11 @@
     transition: 0.5s;
 }
 
+.esconder{
+    display: none;
+    transition: 0.5s;
+}
+
 body::-webkit-scrollbar{
     display: none;
 }

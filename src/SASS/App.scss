@@ -4,3 +4,7 @@
 @import "./Components/Title";
 @import "./Components/Header", "./Components/Home", "./Components/Aboutme", 
         "./Components/Skills", "./Components/Projects","Components/Contact";
+
+body{
+        cursor: default;
+}

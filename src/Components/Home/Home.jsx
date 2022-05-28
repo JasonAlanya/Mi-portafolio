@@ -1,6 +1,7 @@
 import React from 'react'
 import {ParticlesContainer} from './Triangle'
 import Typical from 'react-typical'
+import cv from '../../CV.pdf'
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
         loop={Infinity}
         wrapper="p"
       />
-      <a href=''>Download Resume</a>
+      <a href={cv} target="_blank">Download Resume</a>
       <ParticlesContainer className="Particulas"/>
     </div>
   )

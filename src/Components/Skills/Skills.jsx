@@ -18,6 +18,7 @@ import inventor from '../../Images/inventor.png'
 import solidworks from '../../Images/solidworks.png'
 
 const Skills = () => {
+
   return (
     <div id='Skills'>
       <Title texto="Skills"/>
